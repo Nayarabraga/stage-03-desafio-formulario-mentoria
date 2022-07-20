@@ -1,0 +1,206 @@
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+{
+font-family: 'poppins', sans-serif;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+
+.page {
+
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 600px;
+  margin-top: 140px;
+
+}
+
+header h1 {
+  font-family: 'Staatliches', sans-serif;
+
+  font-size: 48px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+header p {
+
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+form {
+  background: #FFFFFF;
+
+  min-height: 322px;
+  margin-top: 74px;
+  padding: 64px;
+  border-radius: 20px 20px 0 0;
+}
+
+
+
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', sans-serif;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+
+
+}
+
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.div-col-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.div-col-2 .input-box {
+  width: 100%;
+  max-width: 340px;
+}
+
+.div-date {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-box label {
+
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+  margin-bottom: 8px;
+
+}
+
+.input-box label span {
+  margin-left: 9.12px;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #C1BCCC;
+}
+
+.input-box input {
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 110px;
+}
+
+h2 {
+  font-family: 'Staatliches', sans-serif;
+
+
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+
+}
+
+footer {
+  background: #535971;
+  width: 750px;
+  height: 160px;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 52.67px 71px;
+
+  margin-bottom: 100px;
+}
+
+footer .button {
+  height: 56px;
+  background: #FF5374;
+  border-radius: 20px;
+  border: none;
+
+  font-family: 'Staatliches';
+
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background .5s;
+}
+
+footer .button:hover {
+  background: #ec3d60;
+
+}
+
+
+input:focus {
+  background: #FF5374;
+}
+
+
+input:invalid {
+  border: 1px solid red;
+}
